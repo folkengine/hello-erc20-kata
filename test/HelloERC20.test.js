@@ -14,13 +14,17 @@ contract('HelloERC20', function([owner, sender, receiver, proxy]) {
   const TOKEN_COUNT = 1000000;
 
   beforeEach(async function() {
-    this.hello = await HelloERC20.new({ from: owner });
+    this.token = await HelloERC20.new({ from: owner });
   });
 
   describe('Given that I have a Token Contract', function() {
     it('it should have the correct name', async function() {
       const name = await this.token.name();
       name.should.be.equal("Hello ERC20 Coin");
+    });
+    it('should have the correct decimals', async function() {
+        const decimals = await this.token.decimals();
+        decimals.should.be.bignumber.equal(0);
     });
   });
 
