@@ -25,7 +25,7 @@ $> npm install -g ganache-cli
 
 #### Feature: Create a Basic Token Class
 ```
-As a Token Contract I want to have a name, and symbol that distinguishes me. 
+As a Token Contract I want to have a name, and symbol that distinguishes me.
 ```
 * Can get the Token's name as a public field
 * Can get the Token's three character symbol as a public field
@@ -63,22 +63,25 @@ As a Token Contract I want to emit a Transfer event when the transfer function i
 
 #### Feature: Allowance
 ```
-As an Blockchain User I want to be able to see how many tokens a Token holder has allowed someone else to spend on their behalf. 
+As an Blockchain User I want to be able to see how many tokens a Token holder has allowed
+someone else to spend on their behalf.
 ```
 * passing in owner and spender addresses returns amount
 * returns zero if none have been approbed
 
 #### Feature: Approve
 ```
-As a token holder I want to allow another address to transfer tokens on my behalf.
+As a Token holder I want to allow another address to transfer tokens on my behalf.
 ```
 * passing in address of spender and amount returns true if possible
 * emits an Approval event when successful
 
 #### Feature: Transfer From
 ```
-
+As a third party I want to be able to transfer Token from one address to another when I've been approved.
 ```
+* Approved third party address is able to transfer tokens from an approved address to another address
+* Emits a Transfer Event
 
 
 

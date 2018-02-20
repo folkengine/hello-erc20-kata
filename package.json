@@ -1,0 +1,26 @@
+{
+  "name": "hello-erc20-kata",
+  "version": "1.0.0",
+  "description": "Implementation of a Test Driven ERC20 Token",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/folkengine/hello-erc20-kata.git"
+  },
+  "keywords": [
+    "truffle",
+    "ethereum"
+  ],
+  "author": "Christoph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/folkengine/hello-erc20-kata/issues"
+  },
+  "homepage": "https://github.com/folkengine/hello-erc20-kata#readme"
+}
